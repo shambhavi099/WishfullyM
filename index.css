@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+html,body{
+margin:0;
+padding:0;
+overflow-x: hidden;
+}
+* {
+    margin:0;
+    padding:0;
+   box-sizing:border-box;
+   font-family:'Sriracha';
+}
+
+header{
+    background: url('./img/d60.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:15px;
+    
+    padding:40px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+
+.logo img{
+    background-size: contain; 
+    background-position: center center;
+    height: 60vh; 
+    width: 90%;
+    margin-top:10%;
+}
+
+.navigation a{ 
+    position:relative;
+    font-size: 1.1em;
+    color: #4c6e2f;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:3px;
+    background-color: #4c6e2f;
+    left:0%;
+    bottom: -6px;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: 1s;
+}
+
+.navigation a:hover::after {
+transform: scaleX(1);
+text-decoration: underline;
+}
+
+.no-hover{
+    
+    cursor: default;
+}
+
+.popup-button{
+    width:150px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #4c6e2f;
+    outline: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#4c6e2f;
+    font-weight: 500;
+    margin-left: 40px;
+    transition:1s;
+  
+}
+
+ 
+/* Dropdown Styles */
+.dropdown {
+    margin-top: -30;
+    margin-left: 20%;
+    position:relative;
+}
+
+.dropdown-link {
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Initially hide the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #928f8f;
+    top: 100%;
+    margin-left: 300px;
+
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    padding: 5px;
+    text-align: left;
+}
+
+/* .dropdown-menu a:hover {
+    background-color: #575757;
+} */
+
+/* Show the dropdown menu when hovering over the parent */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.footer{
+    background: url("./img/d60.jpg");
+    height: 400px;
+    width:100%;
+    margin-top: 20px;
+}
